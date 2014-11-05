@@ -41,8 +41,10 @@
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 
 (load "~/.emacs.d/vendor/clojure")
+(load "~/.emacs.d/packages.el")
+(load "~/.emacs.d/vendor/elisp.el")
 
-;; hippie expand - don't try to complete with file names
+;; Hippie expand - don't try to complete with file names
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name hippie-expand-try-functions-list))
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name-partially hippie-expand-try-functions-list))
 
